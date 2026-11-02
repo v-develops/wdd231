@@ -1,0 +1,57 @@
+@media only screen and (min-width: 608px) {
+    /*--------------------------------------*/
+    header, main, nav, footer {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    header {
+        grid-template-columns: 40px 1fr;
+        padding: 1.5rem 10px;
+    }
+    header span {
+        font-size: 1.6rem;
+    }
+    .hamburger {
+        display: none;
+    }
+    /*--------------------------------------*/
+    .navigation {
+        display: block;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 10px;
+    }
+    .navigation ul {
+        display: flex;
+    }
+    .navigation a {
+        border: none;
+        padding: 1rem 1.5rem;
+        font-size: 1.1rem;
+    }
+    /*--------------------------------------*/
+    main h1 {
+        font-size: 2.2rem;
+    }
+    .about-container {
+        grid-template-columns: 2fr 1fr;
+        gap: 15px;
+    }
+    .about-me,
+    .student-photo {
+        min-height: 250px;
+    }
+    /*--------------------------------------*/
+    .course-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    /*--------------------------------------*/
+    .social a {
+        width: 55px;
+        height: 55px;
+    }
+    .social img {
+        width: 36px;
+        height: 36px;
+    }
+}

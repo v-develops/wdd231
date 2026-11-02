@@ -1,0 +1,234 @@
+* {
+  box-sizing: border-box;
+}
+:root {
+  --color-1: #B08D57;
+  --color-2: #C9B37E;
+  --color-3: #2F3E46;
+  --color-4: #E0D2B2;
+  --color-5: #6B4F3A;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--color-4);
+  color: var(--color-3);
+}
+/*--------------------------------------*/
+header {
+  display: grid;
+  grid-template-columns: 24px 1fr 44px;
+  column-gap: 10px;
+  align-items: end;
+
+  padding: 1rem 0 1rem 10px;
+
+  color: var(--color-3);
+}
+header img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+header span {
+  font-size: 1.2rem;
+}
+.hamburger {
+  background: none;
+  border: none;
+  cursor: pointer;
+
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+  padding-bottom: 3px;
+
+  color: var(--color-3);
+}
+.hamburger::before {
+  content: "\2630";
+}
+.hamburger.show::before {
+  content: "\00D7";
+}
+/*--------------------------------------*/
+.navigation {
+  display: none;
+  padding: 0 10px;
+}
+.navigation.show {
+  display: block;
+}
+.navigation ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.navigation a {
+  display: block;
+  padding: 0.8rem 10px;
+
+  color: var(--color-3);
+  text-decoration: none;
+}
+.navigation a:hover {
+  background-color: var(--color-3);
+  color: white;
+}
+.navigation li.current {
+  background-color: var(--color-5);
+}
+.navigation li.current a {
+  color: white;
+}
+/*--------------------------------------*/
+main {
+  padding: 10px;
+}
+h1 {
+  margin-left: 10px;
+}
+/*--------------------------------------*/
+/* About Me and Student Photo */
+.about-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+}
+.about-me,
+.student-photo,
+.certificate-courses {
+  background-color: var(--color-2);
+  border: 1px solid var(--color-5);
+  border-radius: 5px;
+  overflow: hidden;
+}
+main h2 {
+  background-color: var(--color-3);
+  color: white;
+  text-align: center;
+  font-size: 1rem;
+  padding: 10px;
+  margin: 0;
+}
+.about-me p {
+  padding: 10px;
+  line-height: 1.5;
+  color: #000000;
+}
+.student-photo {
+  text-align: center;
+}
+.student-photo img {
+  display: block;
+  width: 80%;
+  max-width: 250px;
+  height: auto;
+  margin: 15px auto;
+  border-radius: 5px;
+
+  object-fit: cover;
+}
+/*--------------------------------------*/
+/* Certificate Courses */
+.certificate-courses {
+  margin-top: 15px;
+}
+.course-filters {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  padding: 10px;
+}
+.course-filters button {
+  padding: 8px;
+  cursor: pointer;
+  border: 1px solid var(--color-5);
+  border-radius: 5px;
+  background-color: var(--color-4);
+  color: var(--color-3);
+  font-weight: bold;
+}
+.course-filters button:hover,
+.course-filters button.active:hover {
+  background-color: var(--color-3);
+  color: white;
+  border-color: var(--color-3);
+}
+.course-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  padding: 10px;
+}
+.course-container div {
+  padding: 15px;
+  border-radius: 5px;
+  text-align: center;
+}
+.course-container h3 {
+  margin: 0 0 10px;
+  color: #000000;
+}
+.course-container p {
+  margin: 0;
+  color: #000000;
+}
+.completed {
+  background-color: #dff3e3;
+  border: 1px solid #4caf50;
+}
+.in-progress {
+  background-color: #fce4e4;
+  border: 1px solid #dc3545;
+}
+.in-progress h3::before {
+  content: "X";
+  color: #dc3545;
+  margin-right: 8px;
+}
+.completed h3::before {
+  content: "✓";
+  color: #218838;
+  margin-right: 8px;
+}
+.not-completed {
+  background-color: var(--color-2);
+  border: 1px solid var(--color-5);
+}
+.course-filters button.active {
+  background-color: var(--color-5);
+  color: white;
+  border-color: var(--color-5);
+}
+#total-credits {
+  text-align: center;
+  font-weight: bold;
+  padding: 10px;
+  margin: 0;
+  color: #000000;
+}
+/*--------------------------------------*/
+footer {
+  padding: 1rem 10px;
+  text-align: center;
+}
+.social {
+  display: flex;
+  justify-content: center;
+  column-gap: 10px;
+}
+.social a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+
+  border: var(--color-3) solid 1px;
+}
+.social a:hover {
+  background-color: var(--color-2);
+}
+.social img {
+  width: 22px;
+  height: 22px;
+}

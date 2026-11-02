@@ -3,9 +3,80 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Week 01 Main Page</title>
+
+    <meta name="description" content="main page of my wdd231 website,
+     where I introduce myself and share a photo of me.">
+    <meta name="author" content="victor caputo cerillo andrade">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <script src="scripts/script.js" defer></script>
 </head>
 <body>
-    <h1>Testando, 1, 2, 3</h1>
+    <header>
+        <img src="images/feather-solid-full.svg" alt="feather logo" width="640" height="640" loading="eager">
+        <span>Victor C C Andrade</span>
+        <button type="button" id="nav-button" class="hamburger" aria-label="Toggle navigation" aria-expanded="false"></button>
+    </header>
+
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li class="current"><a href="#" aria-current="page">Home</a></li>
+            <li><a href="#">Chamber</a></li>
+            <li><a href="#">Final</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Home</h1>
+
+        <div class="about-container">
+            <section class="about-me">
+                <h2>About Me</h2>
+                <p>
+                    My name is Victor Andrade, I live in Brazil, and I am a student at BYU-Pathway Worldwide. I am currently
+                    pursuing a degree in Software Development. I like to compose instrumental music, practice archery, hike and collect CDs.
+                    Its a pleasure to be part of this course and I am looking forward to learn more with everyone!
+                </p>
+            </section>
+
+            <section class="student-photo">
+                <h2>Student Photo</h2>
+                <img src="images/my-photo.webp" alt="Photo of Victor" width="250" height="250" loading="lazy">
+            </section>
+        </div>
+        
+        <section class="certificate-courses">
+            <h2>Web Certificate Courses</h2>
+
+            <div class="course-filters">
+                <button type="button" id="all-courses" class="active">ALL</button>
+                <button type="button" id="cse-courses">CSE</button>
+                <button type="button" id="wdd-courses">WDD</button>
+            </div>
+
+            <div id="display-courses" class="course-container">
+
+            </div>
+
+            <p id="total-credits">
+
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social">
+            <a href="https://github.com/v-develops" target="_blank" rel="noopener noreferrer"><img src="images/github.svg" alt="Github" width="16" height="16"></a>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"><img src="images/linkedin.svg" alt="linkedin" width="16" height="16"></a>
+            <a href="https://discord.com/" target="_blank" rel="noopener noreferrer"><img src="images/discord.svg" alt="Discord" width="16" height="16"></a>
+        </div>
+
+        <p>©<span id="current-year"></span> ● Victor C C Andrade ● Rio de Janeiro, Brazil</p>
+        <p class="last-modified">Last Modified: <span id="lastModified"></span></p>
+    </footer>
 </body>
 </html>
