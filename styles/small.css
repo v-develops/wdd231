@@ -9,7 +9,7 @@
   --color-5: #6B4F3A;
 }
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Roboto", sans-serif;
   background-color: var(--color-4);
   color: var(--color-3);
 }
