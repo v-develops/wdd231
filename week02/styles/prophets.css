@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 1rem;
+    background-color: #f4f4f7;
+}
+/*--------------------------------------*/
+h1 {
+    text-align: center;
+    color: #484b91;
+    font-family: Georgia, serif;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 0.25rem;
+    padding: 1rem;
+    background-color: #ffffff;
+    box-shadow: 0 0 15px #aaa;
+}
+#cards section {
+    background-color: #d5d5e5;
+    border: 1px solid #7777b5;
+    padding: 0.75rem;
+    text-align: center;
+}
+#cards h2 {
+    color: #484b91;
+    font-family: Georgia, serif;
+    font-size: 1.25rem;
+    margin: 0.5rem 0;
+}
+#cards p {
+    font-size: 0.85rem;
+    margin: 0.25rem 0;
+}
+#cards img {
+    display: block;
+    width: 65%;
+    height: auto;
+    margin: 0.5rem auto;
+    box-shadow: 0 0 10px #777;
+}
+/*--------------------------------------*/
