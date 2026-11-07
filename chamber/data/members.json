@@ -1,0 +1,65 @@
+[
+    {
+        "name": "Carioca Café & Bistrô",
+        "address": "Rua Visconde de Pirajá, 250, Ipanema, Rio de Janeiro - RJ",
+        "phone": "(21) 97287-7777",
+        "website": "https://cariocacafe.com",
+        "image": "carioca-cafe.webp",
+        "membershipLevel": 3,
+        "description": "Coffee shop and restaurant specializing in Rio de Janeiro cuisine."
+    },
+    {
+        "name": "Baía Tech Solutions",
+        "address": "Av. Rio Branco, 156, Centro, Rio de Janeiro - RJ",
+        "phone": "(21) 91236-3428",
+        "website": "https://baiatech.com",
+        "image": "baia-tech.webp",
+        "membershipLevel": 2,
+        "description": "Company specializing in technology and digital solutions."
+    },
+    {
+        "name": "Atlântica Turismo",
+        "address": "Av. Atlântica, 1702, Copacabana, Rio de Janeiro - RJ",
+        "phone": "(21) 94228-5394",
+        "website": "https://atlanticaturismo.com",
+        "image": "atlantica-turismo.webp",
+        "membershipLevel": 3,
+        "description": "Tourism agency specializing in experiences in Rio de Janeiro."
+    },
+    {
+        "name": "VerdeMar Consultoria",
+        "address": "Rua Jardim Botânico, 400, Jardim Botânico, Rio de Janeiro - RJ",
+        "phone": "(21) 99912-8926",
+        "website": "https://verdemar.com",
+        "image": "verdemar.webp",
+        "membershipLevel": 1,
+        "description": "Environmental consulting and sustainability projects."
+    },
+    {
+        "name": "Porto Criativo Design",
+        "address": "Rua do Ouvidor, 60, Centro, Rio de Janeiro - RJ",
+        "phone": "(21) 91724-3823",
+        "website": "https://portocriativo.com",
+        "image": "porto-criativo.webp",
+        "membershipLevel": 2,
+        "description": "Creative studio specializing in design and communication."
+    },
+    {
+        "name": "Tijuca Coworking",
+        "address": "Rua Conde de Bonfim, 300, Tijuca, Rio de Janeiro - RJ",
+        "phone": "(21) 98133-3332",
+        "website": "https://tijucacoworking.com",
+        "image": "tijuca-coworking.webp",
+        "membershipLevel": 1,
+        "description": "Shared workspace for professionals and businesses."
+    },
+    {
+        "name": "Rio Solar Energia",
+        "address": "Av. das Américas, 500, Barra da Tijuca, Rio de Janeiro - RJ",
+        "phone": "(21) 93527-9266",
+        "website": "https://riosolar.com",
+        "image": "rio-solar.webp",
+        "membershipLevel": 3,
+        "description": "Solar energy company and energy efficiency solutions."
+    }
+]

@@ -4,30 +4,86 @@
     <!-- Base stuff -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RJ Chamber</title>
+    <title>RJ Chamber of Commerce - Directory</title>
 
-    <meta name="description" content="main page of the Rio de Janeiro Chamber of Commerce Website">
+    <meta name="description" content="Directory page of the Rio de Janeiro Chamber of Commerce Website">
     <meta name="author" content="Victor Caputo Cerillo Andrade">
 
     <link rel="icon" href="favicon.ico">
     <!-- -->
     <!-- Meta Tags -->
-    <meta property="og:title" content="RJ Chamber of Commerce Main Page">
-    <meta property="og:description" content="The initial page of the Chamber of Commerce website activity.">
+    <meta property="og:title" content="RJ Chamber of Commerce directory Page">
+    <meta property="og:description" content="The directory page of the Chamber of Commerce website activity.">
     <meta property="og:image" content="https://v-develops.github.io/wdd231/chamber/images/brazil-image-test-by-pexels-jonathanborba.webp">
     <meta property="og:url" content="https://v-develops.github.io/wdd231/chamber/directory.html">
     <!-- -->
-    <!-- CSS / JS / FONTS -->
+    <!-- CSS / JS / Fonts -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
 
+    <script src="scripts/script.js" defer></script>
     <!-- -->
 </head>
+
 <body>
-    <header><h1>Test</h1></header>
+    <header>
+        <div class="header-content">
+            <img src="images/company.svg" alt="Rio de Janeiro Chamber of Commerce logo" width="80" height="80">
+            <div class="header-title">
+                <h2>Rio de Janeiro</h2>
+                <p>Chamber of Commerce</p>
+            </div>
+            
+            <button type="button" id="nav-button" class="hamburger" aria-label="Toggle navigation" aria-expanded="false"></button>
+        </div>
+    </header>
 
-    <nav></nav>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+            <li><a href="discover.html">Discover</a></li>
+        </ul>
+    </nav>
 
-    <main></main>
+    <main>
+        <h1>Directory</h1>
 
-    <footer></footer>
+        <section class="business-section">
+            <div class="display-toggle">
+                <button type="button" id="grid" class="active">Grid</button>
+                <button type="button" id="list">List</button>
+            </div>
+
+            <div id="display-business" class="business-container">
+                <!-- Add with JS here -->
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="chamber-address">
+            <p><strong>Rio de Janeiro Chamber of Commerce</strong></p>
+            <p>Caminho do Céu, Campo Grande</p>
+            <p>Rio de Janeiro, N°52, 23045-540</p>
+            <p>info@riodejaneirocc.org</p>
+            <p>(22) 92683-2894</p>
+        </div>
+
+        <div class="social">
+            <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer"><img src="images/youtube.svg" alt="YouTube logo" width="16" height="16"></a>
+            <a href="https://x.com/?lang=en" target="_blank" rel="noopener noreferrer"><img src="images/twitter-x.svg" alt="X (Twitter) logo" width="16" height="16"></a>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"><img src="images/linkedin.svg" alt="Linkedin Logo" width="16" height="16"></a>
+        </div>
+        
+        <div class="dev-info">
+            <p>WDD231 Class Project</p>
+            <p>Victor Caputo Cerillo Andrade</p>
+            <p>© <span id="current-year"></span> Rio de Janeiro Chamber of Commerce</p>
+            <p>Last Modification: <span id="lastModified"></span></p>
+        </div>
+    </footer>
 </body>
 </html>
