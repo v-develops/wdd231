@@ -51,7 +51,7 @@ function displayMembers(members) {
         card.classList.add("business-card");
 
         card.innerHTML = `
-            <img src="images/${member.image}" alt="${member.name} logo" width="600" height="400" loading="lazy">
+            <img src="images/${member.image}" alt="${member.name} logo" width="225" height="150" loading="lazy">
 
             <h2 class="business-name">${member.name}</h2>
 
