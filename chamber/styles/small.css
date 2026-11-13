@@ -106,6 +106,10 @@ header {
     background-color: var(--accent-color);
     color: var(--primary-color);
 }
+.navigation a[aria-current="page"] {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+}
 /*--------------------------------------*/
 /* MAIN CONTENT */
 main {
