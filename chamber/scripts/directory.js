@@ -29,12 +29,13 @@ async function getMembers() {
 function displayMembers(members) {
     businessContainer.innerHTML = "";
 
+    const membership = {
+        1: "Member",
+        2: "Silver",
+        3: "Gold"
+    };
+
     members.forEach((member) => {
-        const membership = {
-            1: "Member",
-            2: "Silver",
-            3: "Gold"
-        };
 
         const card = document.createElement("article");
         card.classList.add("business-card");

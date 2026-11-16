@@ -66,7 +66,6 @@ header {
 .hamburger {
     background: none;
     border: none;
-    cursor: pointer;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 2rem;
     color: var(--accent-color);
@@ -171,7 +170,8 @@ h1 {
 /*--------------------------------------*/
 /* INDEX EVENTS AND WEATHER */
 .events-section,
-.weather-section {
+.weather-section,
+.spotlights-section {
     background-color: var(--white-color);
     border: 1px solid var(--border-color);
     border-radius: 8px;
@@ -185,12 +185,6 @@ h1 {
     margin: 0 0 1rem;
     font-size: 1.4rem;
 }
-/* CURRENT EVENTS */
-.events-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1rem;
-}
 /* WEATHER */
 .weather-section {
     display: grid;
@@ -202,11 +196,6 @@ h1 {
 }
 .current-weather,
 .weather-forecast {
-    background-color: var(--background-color);
-    border-radius: 6px;
-    padding: 1rem;
-}
-.current-weather {
     background-color: var(--background-color);
     border-radius: 6px;
     padding: 1rem;
@@ -271,13 +260,6 @@ h1 {
 }
 /*--------------------------------------*/
 /* INDEX BUSINESS SPOTLIGHTS */
-.spotlights-section {
-    background-color: var(--white-color);
-    border: 1px solid var(--border-color);
-    border-radius: 8px;
-    padding: 1.25rem;
-    margin-bottom: 1.5rem;
-}
 .spotlights-container {
     display: grid;
     grid-template-columns: 1fr;
@@ -423,10 +405,6 @@ footer p {
 }
 footer strong {
     color: var(--accent-color);
-}
-.chamber-address,
-.dev-info {
-    text-align: left;
 }
 /*--------------------------------------*/
 /* SOCIAL MEDIA */
