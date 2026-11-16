@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/large.css">
 
-    <script src="scripts/script.js" defer></script>
+    <script type="module" src="scripts/home.js"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -52,7 +52,52 @@
         </ul>
     </nav>
 
-    <main></main>
+    <main>
+        <section class="hero">
+            <img src="images/rio-de-janeiro-pexels-by-daniel-wander.webp" alt="Aerial view of Rio de Janeiro coastline" width="1000" height="563" fetchpriority="high" loading="eager">
+
+            <div class="hero-content">
+                <h1>Connecting Businesses. Improving Rio de Janeiro.</h1>
+                <p>Discover opportunities, connect with local businesses, and help strengthen our community.</p>
+                
+                <a href="join.html" class="hero-button">Join the Chamber</a>
+            </div>
+        </section>
+
+        <section class="events-section">
+            <h2>Current Events</h2>
+
+            <div class="events-container">
+                <p>Stay tuned for upcoming events in Rio de Janeiro!</p>
+            </div>
+        </section>
+
+        <section class="weather-section">
+            <h2>Weather</h2>
+
+            <div class="current-weather">
+                <h3>Current Weather</h3>
+                <div id="weather-current">
+                    <p>Loading current weather...</p>
+                </div>
+            </div>
+
+            <div class="weather-forecast">
+                <h3>3-Day Forecast</h3>
+                <div id="weather-forecast">
+                    <p>Loading forecast...</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="spotlights-section">
+            <h2>Business Spotlights</h2>
+
+            <div id="spotlights-container" class="spotlights-container">
+                <p>Loading business spotlights...</p>
+            </div>
+        </section>
+    </main>
     
     <footer class="site-footer">
         <div class="chamber-address">

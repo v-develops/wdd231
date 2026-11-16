@@ -1,19 +1,8 @@
 /*--------------------------------------*/
-/* FOOTER TIME */
-const currentYear = new Date().getFullYear();
-document.querySelector("#current-year").textContent = currentYear;
+/* IMPORT SHARED FEATURES */
+import { initializeCommon } from "./common.js";
 
-document.getElementById("lastModified").textContent = document.lastModified;
-/*--------------------------------------*/
-/* HAMBURGUER MENU */
-const navButton = document.querySelector('#nav-button');
-const navBar = document.querySelector('#nav-bar');
-
-navButton.addEventListener('click', () => {
-    const isOpen = navButton.classList.toggle('show');
-    navButton.setAttribute('aria-expanded', isOpen);
-    navBar.classList.toggle('show');
-});
+initializeCommon();
 /*--------------------------------------*/
 /* LOAD BUSINESS MEMBERS */
 const businessContainer = document.querySelector("#display-business");
@@ -76,9 +65,6 @@ function displayMembers(members) {
     });
 }
 /*--------------------------------------*/
-/* START LOADING MEMBERS */
-getMembers();
-/*--------------------------------------*/
 /* GRID AND LIST VIEW */
 const gridButton = document.querySelector("#grid");
 const listButton = document.querySelector("#list");
@@ -96,4 +82,7 @@ listButton.addEventListener("click", () => {
     listButton.classList.add("active");
     gridButton.classList.remove("active");
 });
+/*--------------------------------------*/
+/* START LOADING MEMBERS */
+getMembers();
 /*--------------------------------------*/
