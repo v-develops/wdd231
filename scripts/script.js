@@ -94,12 +94,39 @@ const courses = [
     }
 ]
 /*--------------------------------------*/
+/* MODAL DISPLAY & OUTSIDE CLOSE */
+const courseDetails = document.querySelector("#course-details");
+
+function displayCourseDetails(course) {
+    courseDetails.innerHTML = `
+        <button id="closeModal" aria-label="Close">❌</button>
+        <h2>${course.subject} ${course.number}</h2>
+        <h3>${course.title}</h3>
+        <p><strong>Credits:</strong> ${course.credits}</p>
+        <p><strong>Certificate:</strong> ${course.certificate}</p>
+        <p>${course.description}</p>
+        <p><strong>Technologies:</strong> ${course.technology.join(", ")}</p>
+    `;
+    courseDetails.showModal();
+
+    courseDetails.querySelector("#closeModal").addEventListener("click", () => {
+        courseDetails.close();
+    });
+}
+
+courseDetails.addEventListener("click", (event) => {
+    if (event.target === courseDetails) {
+        courseDetails.close();
+    }
+});
+/*--------------------------------------*/
 /*Making course cards*/
 const displayCourses = (courseList) => {
     document.querySelector("#display-courses").innerHTML = "";
 
     courseList.forEach((course) => {
-        let card = document.createElement("div");
+        let card = document.createElement("button");
+        card.type = "button";
 
         if (course.completed) {
             card.classList.add("completed");
@@ -115,6 +142,10 @@ const displayCourses = (courseList) => {
             <h3>${course.subject} ${course.number}</h3>
             <p>${course.title}</p>
         `;
+
+        card.addEventListener("click", () => {
+        displayCourseDetails(course);
+        });
 
         document.querySelector("#display-courses").appendChild(card);
     });
