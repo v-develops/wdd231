@@ -64,18 +64,20 @@
 
             <fieldset>
                 <legend>Organization Information</legend>
-                <label>Organization Title <input type="text" name="orgTitle" title="The title of your organization" autocomplete="organization-title"></label>
+                <label>Organization Title <input type="text" name="orgTitle" title="The title of your organization" autocomplete="organization-title" pattern="[A-Za-z -]{7,}"></label>
                 <label>Organization Name <input type="text" required name="orgName" title="The name of your organization" autocomplete="organization"></label>
                 <label>Organization Description <textarea name="orgDescription" title="A brief description of your organization"></textarea></label>
             </fieldset>
 
             <fieldset>
                 <legend>Membership Level</legend>
-                <label><input type="radio" name="membership" value="1" required>NP Membership</label>
-                <label><input type="radio" name="membership" value="2" required>Bronze Membership</label>
-                <label><input type="radio" name="membership" value="3" required>Silver Membership</label>
-                <label><input type="radio" name="membership" value="4" required>Gold Membership</label>
+                <label><input type="radio" name="membership" value="np" required>NP Membership</label>
+                <label><input type="radio" name="membership" value="bronze" required>Bronze Membership</label>
+                <label><input type="radio" name="membership" value="silver" required>Silver Membership</label>
+                <label><input type="radio" name="membership" value="gold" required>Gold Membership</label>
             </fieldset>
+
+            <input type="hidden" name="timestamp" id="timestamp">
 
             <input type="submit" value="Join Now!">
         </form>
