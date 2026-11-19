@@ -55,6 +55,15 @@
         max-width: 1600px;
         min-width: 0;
     }
+    .join-page main {
+        grid-column: 1 / -1;
+        grid-row: 2 / 4;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        align-items: start;
+        width: 100%;
+    }
     /*--------------------------------------*/
     /* INDEX GRID LAYOUT */
     .home-page .hero,
@@ -101,6 +110,11 @@
     }
     .business-container.list-view .business-name {
         grid-column: auto;
+    }
+    /*--------------------------------------*/
+    /* JOIN CARDS */
+    .membership-cards {
+        margin-top: 0;
     }
     /*--------------------------------------*/
     /* FOOTER */
