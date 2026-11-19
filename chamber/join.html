@@ -54,6 +54,7 @@
 
     <main>
         <form method="get" action="thankyou.html">
+            <h2>Membership Application Form</h2>
             <fieldset>
                 <legend>Personal Information</legend>
                 <label>First Name <input type="text" required name="firstName" title="Your first name" autocomplete="given-name"></label>
@@ -81,9 +82,93 @@
 
             <input type="submit" value="Join Now!">
         </form>
-
+        <!-- -->
         <section class="membership-cards">
-            <dialog id="membership-details"></dialog>
+            <h2>Membership Levels</h2>
+
+            <div class="membership-container">
+                <article class="membership-card">
+                    <h3>Non profit membership level</h3>
+                    <a href="#np-info">Learn More</a>
+                </article>
+
+                <article class="membership-card">
+                    <h3>Bronze membership level</h3>
+                    <a href="#bronze-info">Learn More</a>
+                </article>
+
+                <article class="membership-card">
+                    <h3>Silver membership level</h3>
+                    <a href="#silver-info">Learn More</a>
+                </article>
+
+                <article class="membership-card">
+                    <h3>Gold membership level</h3>
+                    <a href="#gold-info">Learn More</a>
+                </article>
+            </div>
+            <!-- -->
+            <dialog id="np-info" class="membership-modal">
+                <button type="button" class="modal-close" aria-label="Close">X</button>
+
+                <h3>NP Membership</h3>
+                <hr>
+                <p>Benefits include:</p>
+                <ul>
+                    <li>You'll get a nice plaque with the mayor's stamp on it</li>
+                    <li>Access to great networking opportunities</li>
+                </ul>
+                <p><strong>Cost:</strong> Free</p>
+            </dialog>
+
+            <dialog id="bronze-info" class="membership-modal">
+                <button type="button" class="modal-close" aria-label="Close">X</button>
+
+                <h3>Bronze Membership</h3>
+                <hr>
+                <p>Benefits include:</p>
+                <ul>
+                    <li>You'll get a nice plaque with the mayor's stamp on it</li>
+                    <li>Access to great networking opportunities</li>
+                    <li>Business workshops</li>
+                    <li>Free soda at the snack bar</li>
+                </ul>
+                <p><strong>Cost:</strong> $10 monthly</p>
+            </dialog>
+
+            <dialog id="silver-info" class="membership-modal">
+                <button type="button" class="modal-close" aria-label="Close">X</button>
+
+                <h3>Silver Membership</h3>
+                <hr>
+                <p>Benefits include:</p>
+                <ul>
+                    <li>You'll get a nice plaque with the mayor's stamp on it</li>
+                    <li>Business workshops</li>
+                    <li>Free soda at the snack bar</li>
+                    <li>Home page spotlight</li>
+                    <li>Priority access to networking events</li>
+                </ul>
+                <p><strong>Cost:</strong> $20 monthly</p>
+            </dialog>
+
+            <dialog id="gold-info" class="membership-modal">
+                <button type="button" class="modal-close" aria-label="Close">X</button>
+
+                <h3>Gold Membership</h3>
+                <hr>
+                <p>Benefits include:</p>
+                <ul>
+                    <li>You'll get a nice plaque with the mayor's stamp on it</li>
+                    <li>Business workshops</li>
+                    <li>Free soda at the snack bar</li>
+                    <li>Home page spotlight</li>
+                    <li>Priority access to networking events</li>
+                    <li>Invitation to special events</li>
+                    <li>Discount tickets to AquaRio</li>
+                </ul>
+                <p><strong>Cost:</strong> $30 monthly</p>
+            </dialog>
         </section>
     </main>
 
