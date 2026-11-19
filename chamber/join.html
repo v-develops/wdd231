@@ -53,7 +53,36 @@
     </nav>
 
     <main>
+        <form method="get" action="thankyou.html">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label>First Name <input type="text" required name="firstName" title="Your first name" autocomplete="given-name"></label>
+                <label>Last Name <input type="text" required name="lastName" title="Your last name" autocomplete="family-name"></label>
+                <label>Email <input type="email" required name="email" title="Your email" autocomplete="email" placeholder="example@gmail.com"></label>
+                <label>Phone Number <input type="tel" required name="phone" title="Your phone number" autocomplete="tel"></label>
+            </fieldset>
 
+            <fieldset>
+                <legend>Organization Information</legend>
+                <label>Organization Title <input type="text" name="orgTitle" title="The title of your organization" autocomplete="organization-title"></label>
+                <label>Organization Name <input type="text" required name="orgName" title="The name of your organization" autocomplete="organization"></label>
+                <label>Organization Description <textarea name="orgDescription" title="A brief description of your organization"></textarea></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Membership Level</legend>
+                <label><input type="radio" name="membership" value="1" required>NP Membership</label>
+                <label><input type="radio" name="membership" value="2" required>Bronze Membership</label>
+                <label><input type="radio" name="membership" value="3" required>Silver Membership</label>
+                <label><input type="radio" name="membership" value="4" required>Gold Membership</label>
+            </fieldset>
+
+            <input type="submit" value="Join Now!">
+        </form>
+
+        <section class="membership-cards">
+            <dialog id="membership-details"></dialog>
+        </section>
     </main>
 
     <footer class="site-footer">
